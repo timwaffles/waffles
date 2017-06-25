@@ -20,7 +20,7 @@
             /* The close button */
             .closebtn {
                 margin-left: 15px;
-                color: white;
+                color: firebrick;
                 font-weight: bold;
                 float: right;
                 font-size: 22px;
@@ -31,13 +31,14 @@
             /* When moving the mouse over the close button */
             .closebtn:hover {
                 color: black;
-            }
+                background-color: firebrick;
         </style>
         <script>
             function display_alert()
             {
                 alert("You are now going to a new page");
                 document.getElementById("myalert").innerHTML = "Good luck eating cookies";
+                document.getElementById("myimg").src="resources/Spongebob.gif"
             }
         </script>
     </head>
@@ -46,7 +47,7 @@
           <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
           Success! You have reached the page.
         </div>
-        <img src="resources/waffle.jpg"/><br>
+        <img id="myimg" src="resources/waffle.jpg"/><br>
         Go get your waffles from the waffle house
         <a href="http://www.wafflehouse.com"><button type="button"> Get your waffles!</button></a>
         <button onclick="display_alert()" type="button">Don't like waffles. Click this to get cookies.</button>
