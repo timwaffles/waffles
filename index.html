@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Waffles are just pancakes with abs</title>
+        <title>Waffles and cookies</title>
         <style>
             .bordered {
                 //width: 200px;
                 //height: 100px;
                 padding: 20px;
-                border: 10px groove cyan;
+                border: 10px groove hotpink;
               }
               /* The alert message box */
             .alert {
                 padding: 20px;
-                background-color: lightgreen; /* Green */
+                background-color: orange; /* Green */
                 color: white;
                 margin-bottom: 15px;
             }
@@ -30,14 +30,14 @@
             }
             /* When moving the mouse over the close button */
             .closebtn:hover {
-                color: black;
+                color: purple;
                 background-color: firebrick;
         </style>
         <script>
             function display_alert()
             {
                 alert("You are now going to a new page");
-                document.getElementById("myalert").innerHTML = "Good luck eating cookies";
+                document.getElementById("myalert").innerHTML = "Warning!Too many cookies!";
                 document.getElementById("myimg").src="resources/Spongebob.gif"
             }
         </script>
@@ -45,11 +45,12 @@
     <body class="bordered">
         <div id="myalert" class="alert">
           <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-          Success! You have reached the page.
+          Warning! Not a professional website!
         </div>
         <img id="myimg" src="resources/waffle.jpg"/><br>
         Go get your waffles from the waffle house
         <a href="http://www.wafflehouse.com"><button type="button"> Get your waffles!</button></a>
         <button onclick="display_alert()" type="button">Don't like waffles. Click this to get cookies.</button>
+        <a href="https://www.facebook.com/sattwik.nath"><button type="button"> Press to comment.</button></a>
     </body>
 </html>
